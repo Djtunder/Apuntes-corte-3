@@ -68,6 +68,13 @@ $$L \cdot \frac{d^2q(t)}{dt^2} + R \cdot \frac{dq(t)}{dt} + \frac{1}{C} \cdot q(
 
 ## 6. Figuras
 
+ Sistema Mecanico 
+<div align="center">
+<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/cd6053bfee21ec716fd542126612517e54bd406b/img/sistema%20masa-resorte.jpg" width="300">
+</div>
+
+Sistema Electrico
+
 <div align="center">
 <img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/cd6053bfee21ec716fd542126612517e54bd406b/img/sistema%20masa-resorte.jpg" width="300">
 </div>
