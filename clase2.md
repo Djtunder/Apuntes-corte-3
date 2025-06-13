@@ -327,7 +327,46 @@ $$s = \frac{-5 \pm \sqrt{-15}}{2} = \frac{-5}{2} \pm \frac{j\sqrt{15}}{2}$$
 
 $$s= \frac{-5}{2} \pm \frac{j\sqrt{15}}{2}$$
 
-## 9. Conclusiones
+## 9. Codigo de Matlab 
+
+clc;
+clear;
+close all;
+
+% Definir numerador y denominador de G(s)
+numerador = [1 2];           % s + 2
+denominador = [1 4 5];       % s^2 + 4s + 5
+
+% Crear función de transferencia
+G = tf(numerador, denominador);
+
+% Mostrar polos y ceros
+disp('Polos del sistema:');
+poles = pole(G)
+
+disp('Ceros del sistema:');
+zeros = zero(G)
+
+% Graficar diagrama de polos y ceros
+figure;
+pzmap(G)
+title('Diagrama de Polos y Ceros');
+grid on;
+
+% Análisis adicional (opcional)
+figure;
+step(G)
+title('Respuesta al Escalón');
+
+### Grafica
+
+<div align="center">
+<img src="">
+</div>
+
+
+
+## 10. Conclusiones
 
 9.1 Aprendimos que la funcion de Transferencia es una funcion matematica que describe como un sistema dinamico responde de una entrada a una salida .
 Es importante analizar el sistema ya que nos permite ver como el sistema se comporta, bajo diferentes condiciones
