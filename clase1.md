@@ -160,6 +160,22 @@ legend('i_2(t)');
 
 ### Grafica 
 
+ <div align="center">
+ <img src="https://github.com/Djtunder/Apuntes-corte-3/blob/2616567f5de7a7a0bdd938cca7bc1e0d4543c7ce/Build/se%C3%B1al%20de%20respuesta%20matlab.jpg" width="300">
+ </div>
+
+ ## 10. Conclusiones 
+10.1 En problemas de dinámica, cada elemento del sistema tiene un papel y no se puede improvisar. El uso correcto del DCL es una herramienta clave que traduce el problema físico a lenguaje matemático.
+
+10.2 Resolver circuitos eléctricos no es solo cuestión de memorizar fórmulas. Es comprender el flujo de energía y aplicar de forma lógica las leyes de Kirchhoff. Tomarse el tiempo para estructurar bien el sistema facilita todo el proceso posterior, tanto en análisis manual como en simulaciones.
+
+ ## 11. Referencias
+ 
+ Kuo, B. C., & Golnaraghi, F. (2003). Automatic Control Systems (8th ed.). John Wiley & Sons.
+
+Ogata, K. (2004). Dinámica de sistemas (4.ª ed.). Pearson Educación.
+
+Cote, Dinamica de Sistemas-Clase 1 Correcion Parcial 2. ETITC 2025.
 
 
 
