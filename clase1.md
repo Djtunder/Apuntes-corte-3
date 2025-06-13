@@ -90,7 +90,78 @@ Sistema Electrico
 8. Ejercicio ( Parcial Resuelto)
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-corte-3/blob/f41ad0526e49466acd12616d5a39cd33363bc807/img/correccion%20parcial%202.jpg" width="400">
 </div>
+
+Solución
+
+% Parte 1: Sistema masa-resorte-amortiguador acoplado
+
+{DCL del sistema (masa M)
+
+$$U = F_k - F_b = 0$$
+
+$$U = -K(y - x_1) - B(\dot{y} - \dot{x}) = 0$$
+
+$$F_k + F_b = M\ddot{y}$$
+
+$$K(y - x) + B(\dot{y} - \dot{x}) = M\ddot{y}$$
+
+
+
+###  Parte 2: Circuito eléctrico
+
+$$-e + V_L + V_{200} + V_{50} = 0$$
+
+$$-e(t) + 2\dot{I}_1 + 200 I_1 + 50(I_1 - I_2) = 0$$
+
+\text{Condiciones:}
+
+$$V_{50} = V_x, \quad V_C = 0$$
+
+$$(50(I_1 - I_2) + 200 I_2 + \frac{1}{C} \int I_2 \)$$
+
+## 9. Codigo en Matlab
+
+clc;
+clear;
+
+% Parámetros del circuito
+L1 = 2;        % Henrios
+R1 = 200;      % Ohmios
+R2 = 50;       % Ohmios compartido
+R3 = 20;       % Ohmios
+C = 0.2;       % Faradios
+e = 10;        % Voltaje constante
+
+% Sistema de EDOs de segundo orden
+% Variables de estado: i1, i2
+% Representación en forma de sistema de 1er orden
+
+f = @(t, y) [
+    (1/L1)*(e - R1*y(1) - R2*(y(1) - y(2)));                          % di1/dt
+    (1/(R3 + R2))*(-(1/C)*y(2) + R2/L1*(e - R1*y(1) - R2*(y(1) - y(2)))) % di2/dt
+];
+
+% Condiciones iniciales
+y0 = [0; 0];   % i1(0) = 0; i2(0) = 0
+
+% Simulación en el tiempo
+tspan = [0 2];   % segundos
+[t, y] = ode45(f, tspan, y0);
+
+% Graficar la corriente del capacitor (i2)
+plot(t, y(:,2), 'r', 'LineWidth', 2);
+xlabel('Tiempo (s)');
+ylabel('Corriente i_2(t) (A)');
+title('Corriente a través del capacitor de 0.2 F');
+grid on;
+legend('i_2(t)');
+
+### Grafica 
+
+
+
+
 
 
