@@ -76,5 +76,13 @@ $$L \cdot \frac{d^2q(t)}{dt^2} + R \cdot \frac{dq(t)}{dt} + \frac{1}{C} \cdot q(
 Sistema Electrico
 
 <div align="center">
-<img src="https://github.com/Djtunder/Apuntes-Tercer-Corte/blob/cd6053bfee21ec716fd542126612517e54bd406b/img/sistema%20masa-resorte.jpg" width="300">
+<img src="https://github.com/Djtunder/Apuntes-corte-3/blob/64d3688827ad74c7f024cc5e5cdc239ab88be217/Build/CIRCUITO%20RLC.jpg" width="300">
 </div>
+
+7. Tablas
+
+| Sistema                     | Elementos                                         | Variable de salida   | Ecuación diferencial                                                                 |
+|----------------------------|---------------------------------------------------|-----------------------|--------------------------------------------------------------------------------------|
+| Masa-Resorte-Amortiguador  | Masa \(m\), Amortiguador \(b\), Resorte \(k\)     | Desplazamiento \(x(t)\) | $$( m \frac{d^2x(t)}{dt^2} + b \frac{dx(t)}{dt} + kx(t) = F(t)) $$                    |
+| Circuito RLC Serie         | Inductancia \(L\), Resistencia \(R\), Capacitancia \(C\) | Carga \(q(t)\)    | $$( L \frac{d^2q(t)}{dt^2} + R \frac{dq(t)}{dt} + \frac{1}{C}q(t) = V(t))$$ \)          |
+|                            |                                                   | Corriente \(i(t)\)     | $$( i(t) = \frac{dq(t)}{dt}) $$                                                    |
