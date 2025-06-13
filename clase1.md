@@ -86,3 +86,11 @@ Sistema Electrico
 | Masa-Resorte-Amortiguador  | Masa \(m\), Amortiguador \(b\), Resorte \(k\)     | Desplazamiento \(x(t)\) | $$( m \frac{d^2x(t)}{dt^2} + b \frac{dx(t)}{dt} + kx(t) = F(t)) $$                    |
 | Circuito RLC Serie         | Inductancia \(L\), Resistencia \(R\), Capacitancia \(C\) | Carga \(q(t)\)    | $$( L \frac{d^2q(t)}{dt^2} + R \frac{dq(t)}{dt} + \frac{1}{C}q(t) = V(t))$$ \)          |
 |                            |                                                   | Corriente \(i(t)\)     | $$( i(t) = \frac{dq(t)}{dt}) $$                                                    |
+
+8. Ejercicio ( Parcial Resuelto)
+
+<div align="center">
+<img src="">
+</div>
+
+
