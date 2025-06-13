@@ -28,6 +28,12 @@ ejercicios, graficas y comportamientos segun el sistema lo reqiuiera.
 
 🔑3.13 Funcion estrictamente propia: Cunado el grado del Numerador es mas grande que el Denominador.
 
+🔑3.14 Respuesta funcion Rampla: La respuesta a una función rampa es cómo responde un sistema dinámico cuando la entrada es una señal rampa, es decir, una función que crece linealmente con el tiempo
+
+🔑3.15 Respuesta Funcion Escalon: Una entrada escalón modela encendidos repentinos: encender un interruptor, aplicar voltaje repentino, girar una perilla de control a un valor fijo.
+
+🔑 3.16 Respuesta Funcion Amortiguada: es el comportamiento de un sistema dinámico cuando, tras una perturbación o entrada (como un escalón), su salida oscila pero disminuye con el tiempo hasta alcanzar un valor constante o cero. Es típica en sistemas de 2º orden con amortiguamiento.
+
 ## 4. Ejemplos
 Clasificar las siguientes funciones segun el orden
 
@@ -361,7 +367,7 @@ title('Respuesta al Escalón');
 ### Grafica
 
 <div align="center">
-<img src="">
+<img src="https://github.com/Djtunder/Apuntes-corte-3/blob/feb4e5c740b2a7ae6dc07e90d7092b5b99befd24/img/respuesta%20al%20escalon.jpg width="300">
 </div>
 
 
